@@ -1,16 +1,32 @@
 import React from "react";
 import Weather from "./Weather";
-import Footer from "./Footer";
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <h1>Weather Search Engine</h1>
-      <Weather />
-      <Footer />
+      <div className="container">
+        <Weather defaultCity="Coimbra" />
+
+        <footer>
+          This project was coded by {""}
+          <a
+            href="https://github.com/Danielafsp"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Daniela Pereira
+          </a>
+          , open-sourced on {""}
+          <a
+            href="https://github.com/Danielafsp/Weather-react-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
-
-export default App;
